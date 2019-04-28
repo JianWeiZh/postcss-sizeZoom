@@ -1,0 +1,44 @@
+{
+  "name": "postcss-plugin-pxzoom",
+  "version": "0.0.0",
+  "description": "PostCSS plugin 对属性的尺寸放大或缩小",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "pxzoom"
+  ],
+  "scripts": {
+    "test": "jest && eslint *.js"
+  },
+  "author": "zhangjianwei <zjw393854452@163.com>",
+  "license": "MIT",
+  "repository": "JianWeiZh/postcss-plugin-pxzoom",
+  "bugs": {
+    "url": "https://github.com/JianWeiZh/postcss-plugin-pxzoom/issues"
+  },
+  "homepage": "https://github.com/JianWeiZh/postcss-plugin-pxzoom",
+  "dependencies": {
+    "postcss": "^7.0.6"
+  },
+  "devDependencies": {
+    "@logux/eslint-config": "^27.0.0",
+    "eslint": "^5.10.0",
+    "eslint-config-postcss": "^3.0.7",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-es5": "^1.3.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.1.2",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^23.6.0"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
