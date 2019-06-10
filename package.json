@@ -1,6 +1,6 @@
 {
-  "name": "postcss-plugin-pxzoom",
-  "version": "0.0.0",
+  "name": "postcss-size-zoom",
+  "version": "1.0.0",
   "description": "PostCSS plugin 对属性的尺寸放大或缩小",
   "keywords": [
     "postcss",
@@ -13,11 +13,14 @@
   },
   "author": "zhangjianwei <zjw393854452@163.com>",
   "license": "MIT",
-  "repository": "JianWeiZh/postcss-plugin-pxzoom",
-  "bugs": {
-    "url": "https://github.com/JianWeiZh/postcss-plugin-pxzoom/issues"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JianWeiZh/postcss-sizeZoom.git"
   },
-  "homepage": "https://github.com/JianWeiZh/postcss-plugin-pxzoom",
+  "bugs": {
+    "url": "https://github.com/JianWeiZh/postcss-sizeZoom/issues"
+  },
+  "homepage": "https://github.com/JianWeiZh/postcss-sizeZoom",
   "dependencies": {
     "postcss": "^7.0.6"
   },
@@ -40,5 +43,6 @@
   },
   "jest": {
     "testEnvironment": "node"
-  }
+  },
+  "main": "index.js"
 }

@@ -13,7 +13,7 @@ module.exports = postcss.plugin('postcss-plugin-pxzoom', function (opts) {
 			  decl.value = decl.value.replace(reg, function (val) {
           val = val.toLowerCase()
           if (val === '1px') return val
-          return parseFloat(val) * 2 + 'px'
+          return parseFloat(val) * opts.zoom + 'px'
         })
 				// var reg = new RegExp('^[0-9]+' + opts.unitKey), value = ''
 				// if (reg.test(decl.value)) {
@@ -24,7 +24,7 @@ module.exports = postcss.plugin('postcss-plugin-pxzoom', function (opts) {
 		}
 	};
 });
-function returnValueStr(val, opts) {
-	var arr = val.split(opts.unitKey)
-	return arr.length === 1 ? arr[0] * opts.zoom + opts.unitKey : arr[0] * opts.zoom + opts.unitKey + arr[1]
-}
+// function returnValueStr(val, opts) {
+// 	var arr = val.split(opts.unitKey)
+// 	return arr.length === 1 ? arr[0] * opts.zoom + opts.unitKey : arr[0] * opts.zoom + opts.unitKey + arr[1]
+// }
