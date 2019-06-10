@@ -21,7 +21,17 @@
 ## Usage
 
 ```js
-postcss([ require('postcss-plugin-pxzoom') ])
+postcss([ require('postcss-size-zoom') ])
+```
+
+## Postcss.config.js
+
+```js
+'postcss-size-zoom': {
+  'zoom': 2, // 放大缩小的比例， 默认值 1
+  'unitKey': 'px', // 需要修改尺寸的单位， 默认值'px'
+  'changeName': 'cube-ui' // 需要修改的包名，默认值'cube-ui'
+}
 ```
 
 See [PostCSS] docs for examples for your environment.

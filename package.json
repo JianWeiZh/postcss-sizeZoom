@@ -1,7 +1,7 @@
 {
   "name": "postcss-size-zoom",
   "version": "1.0.0",
-  "description": "PostCSS plugin 对属性的尺寸放大或缩小",
+  "description": "postcss plugin postcss-size-zoom 对指定的npm ui包、指定单位的尺寸进行放大或缩小",
   "keywords": [
     "postcss",
     "css",
