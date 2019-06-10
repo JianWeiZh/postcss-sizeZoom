@@ -13,7 +13,7 @@ module.exports = postcss.plugin('postcss-plugin-pxzoom', function (opts) {
 			  decl.value = decl.value.replace(reg, function (val) {
           val = val.toLowerCase()
           if (val === '1px') return val
-          return parseFloat(val) * opts.zoom + 'px'
+          return parseFloat(val) * opts.zoom + opts.zoom
         })
 				// var reg = new RegExp('^[0-9]+' + opts.unitKey), value = ''
 				// if (reg.test(decl.value)) {
